@@ -2,6 +2,8 @@
 
 A deep dive of Theoretical Foundations for Frontend Developer Mastery with intentional examples.
 
+![Knight Capital Incident](images/unnamed (2).jpg "Knight Capital")
+
 Have you ever abandoned an app at the sign-up page? Or felt uneasy navigating a website because the buttons were poorly arranged, the colors clashed, and the layout felt confusing and overly complex? Maybe you were asked to complete 20 fields at once. You carefully fill everything in, click submit — and only then are you told your password doesn’t meet certain hidden requirements. Requirements that were never clearly stated from the beginning. Instead of helpful guidance, you’re met with a vague message: “Invalid input.” Invalid how, you asked?
 Required fields weren’t marked clearly. There was no real-time validation. No red outline showing which field was incorrect. Just a prompt telling you to “go back and correct missing information.”
 So you scroll. You search. You guess.
