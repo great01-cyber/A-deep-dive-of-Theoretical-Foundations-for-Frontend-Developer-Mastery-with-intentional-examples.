@@ -35,9 +35,11 @@ Based on the above I propose the following laws will guide your development. Let
 Fitt’s law is a brainchild of Paul Fitts. He was among the early psychologists who recognised that many human errors result from flawed design rather than simple human weakness. During World War II, he studied airplane cockpit layouts and concluded that numerous incidents attributed to pilot error were actually caused by poor design decisions. Based on his findings, he postulated that the time required to acquire/reach a target is determined by the distance to the target and the size of the target. See diagram illustration below.
 
 
+![Knight Capital Incident](images/2.png "Knight Capital")
+
 ![Knight Capital Incident](images/1.png "Knight Capital")
 
-![Knight Capital Incident](images/2.png "Knight Capital")
+
 
 From the above, between Target B and Target C, it will be faster to interact with Target C than Target B simply because of the distance (Target B is farther away). Interestingly, though Target A and Target C are at the same distance, Target C will still be faster to interact with and less error-prone because of its larger size. In simple terms, Fitt’s Law tells us that the time required to move to a target depends on two main factors: the distance to the target and the size of the target. The farther away an element is, the longer it takes to reach. The smaller it is, the more precision it demands thereby increasing interaction time and the likelihood of errors. Conversely, closer and larger targets reduce cognitive load, motor effort, and frustration. In a nutshell, Fitts’s main message to developers is to reduce the distance users must travel on the screen and to make important buttons large and visually dominant. Imagine placing a submit button at the top-right corner of the screen. After a user finishes filling out a long form, they must then move their cursor or thumb all the way back to the top-right corner just to submit the form. Ideally, the best place to position the submit button is at the bottom, where the form ends. Another example of this is - placing the related buttons like “Add to Cart” button and “Check out Button” in opposite directions. This will cause extra thumb movement across the screen, thereby increasing interaction.
 
@@ -49,18 +51,23 @@ This is why operating systems such as Apple’s macOS and Microsoft Windows posi
 
 In essence, infinite targets transform small interface elements into large, easy‑to‑hit zones simply by leveraging the geometry of the screen. What this means for developers: Place your most important and frequently used actions where users can reach them with the least effort. Screen edges and corners act as natural stopping points, meaning users cannot overshoot them. This transforms even small buttons into large, easy‑to‑hit interaction zones. By anchoring navigation bars, primary actions, and essential menus along these boundaries, you reduce cognitive load, speed up interaction, and create interfaces that feel more intuitive. 
 
+![Knight Capital Incident](images/3.png "Knight Capital")
+
 From the image above, we can see that the call-to-actions buttons on each of the screens are the most visually dominant button and largest in size and also blacked within the natural region. This makes it faster/easier to interact with. 
+
+![Knight Capital Incident](images/4.png "Knight Capital")
 
 Place your Call-to-actions button  within the natural zone.
 
 **Hicks Law**: 
 Hick’s Law is a psychological principle that describes the relationship between the number of choices presented to a user and the time it takes them to make a decision. It was formulated by William Edmund Hick in 1952. The law states that as the number of options increases, the decision time increases logarithmically. In simple terms, more choices slow users down, while fewer choices speed up decision-making. 
 
+![Knight Capital Incident](images/5.png "Knight Capital")
 Literally, this is how users feel when they encounter a form that asks for too much information upfront. The longer the form gets, the more frustrated they become. An example of this is Overloading menus with too many items, Presenting long, unorganized forms,Too many call-to-actions (CTAs) on one screen and Nested menus with excessive depth etc. All of these creates friction and can lead to cognitive overload.
 
 As a developer, avoid overwhelming users with too many buttons, menu items, or actions at once. Avoid cluttered navigation menus. In fact, it’s been said that SEO engines find it harder to track too many menus. Hide advanced options under “More” or use progressive disclosure. Use progressive disclosure to break multi-step forms and complex decisions into smaller steps. Organise options into logical categories so users can process information faster (An example of this is, placing “delete” and “edit” options together, as they often go together). Reduce decision anxiety, as too many choices create doubt and friction (It’s been said that the more you ask from a user, the less you get). I also advise using recommended labels, showing brief descriptions, providing visual previews, and using comparison tables wisely to show comparison between products especially when they have many characteristics. An example of a comparison table is shown below:
 
-![Knight Capital Incident](images/developerImage.jpg "Knight Capital")
+![Knight Capital Incident](images/6.jpg "Knight Capital")
 
 Use of comparison table to compare products
 
@@ -112,6 +119,8 @@ Von Restorff Effect (The Isolation Effect).MOV
 
 Design Takeaway from Von Restorff Effect: So because users notice and remember distinctive elements more than uniform ones, make important buttons, alerts, or messages visually stand out (color, size, shape). Attention is limited, therefore isolate key information instead of blending it with clutter. Because important actions can be overlooked if not prominent, use contrasting colors, bold typography, or animations to guide users. Because visual salience improves recall, critical notifications or CTAs are placed where users are most likely to see them. However, please note as a frontend dev, you have to be careful with over-differentiation. If you have five different buttons all trying to be "unique" with different colors and animations, you create cognitive overload. The Von Restorff Effect only works when there is a clear, consistent pattern to break.
 
+![Knight Capital Incident](images/7.jpg "Knight Capital")
+
 **Gestalt Principles**
 
 **Jackob’s Law**: According Jackob’s law, Users spend most of their time on other sites. This means they prefer your site to work the same way as all the others they already know. For example “Hamburger” menus, top navigation, and search boxes are well-known web features. Users don’t have to think much or wonder what a feature is for. So introducing a different kind of search bar may warrant your user to think about what it's for. 
@@ -127,6 +136,8 @@ The aesthetic-usability effect is a psychological effect discovered in UX resear
 **Miller's Law**: This is a brainchild of George A Miller. It’s about “The Magical Number Seven, Plus or Minus Two”. This law basically says the average person can only keep 7 (±2) items in their working memory. Miller emphasised that the brain doesn’t just store raw items — it groups them into chunks. Since the human brain can only hold roughly 7 (±2)   "chunks" of information at once, developers should break long strings of data into smaller units. Instead of 1234567890, use 123-456-7890.Aim for roughly 5 to 9 primary navigation items. If you have more, use categories to group them. This allows the user to memorize the "category" as one chunk rather than individual links. Also, long forms are the enemy of Miller’s Law. If a user sees 30 input fields, their brain treats it as a single, massive, stressful task. Therefore use a Progressive Stepper. By showing only 5–7 fields per page, the user feels a sense of completion at each stage and is less likely to abandon the process. 
 
 Also, when providing results (like on an e-commerce site), don't expect users to compare 50 items at once. Provide robust filters. This allows users to narrow down the "set" of information to a size their brain can actually process and compare.
+
+![Knight Capital Incident](images/8.jpg "Knight Capital")
 
 Image of progressive stepper
 
