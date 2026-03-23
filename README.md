@@ -34,6 +34,11 @@ Based on the above I propose the following laws will guide your development. Let
 **Fitts’s Law:** 
 Fitt’s law is a brainchild of Paul Fitts. He was among the early psychologists who recognised that many human errors result from flawed design rather than simple human weakness. During World War II, he studied airplane cockpit layouts and concluded that numerous incidents attributed to pilot error were actually caused by poor design decisions. Based on his findings, he postulated that the time required to acquire/reach a target is determined by the distance to the target and the size of the target. See diagram illustration below.
 
+
+![Knight Capital Incident](images/1.png "Knight Capital")
+
+![Knight Capital Incident](images/2.png "Knight Capital")
+
 From the above, between Target B and Target C, it will be faster to interact with Target C than Target B simply because of the distance (Target B is farther away). Interestingly, though Target A and Target C are at the same distance, Target C will still be faster to interact with and less error-prone because of its larger size. In simple terms, Fitt’s Law tells us that the time required to move to a target depends on two main factors: the distance to the target and the size of the target. The farther away an element is, the longer it takes to reach. The smaller it is, the more precision it demands thereby increasing interaction time and the likelihood of errors. Conversely, closer and larger targets reduce cognitive load, motor effort, and frustration. In a nutshell, Fitts’s main message to developers is to reduce the distance users must travel on the screen and to make important buttons large and visually dominant. Imagine placing a submit button at the top-right corner of the screen. After a user finishes filling out a long form, they must then move their cursor or thumb all the way back to the top-right corner just to submit the form. Ideally, the best place to position the submit button is at the bottom, where the form ends. Another example of this is - placing the related buttons like “Add to Cart” button and “Check out Button” in opposite directions. This will cause extra thumb movement across the screen, thereby increasing interaction.
 
 Design Takeaway from Fitt’s Law: As a frontend developer, you should always ensure your targets (by target I mean primary buttons/(Call-to-action buttons) such as "Subscribe Now," "Pay Now," "Create Account," or "Sign Up") are large and visually dominant. I strongly recommend making the Call-to-Action (CTA) the most recognisable button on the screen; this is backed by UI theory. Additionally, place your CTA buttons in a natural position that feels convenient for the user. Specifically, place your targets close to the thumb. It is much faster for a user to interact within the "natural zone" than the "hard zone" (see figure). Also use padding to increase the interactive area. By doing this, you are increasing the size of the targets. Now imagine a menu that disappears because your cursor moves a few inches away from the menu, simply because the developer  failed to use effective padding to increase the interactive area that will be really frustrating to the user. 
@@ -44,9 +49,7 @@ This is why operating systems such as Apple’s macOS and Microsoft Windows posi
 
 In essence, infinite targets transform small interface elements into large, easy‑to‑hit zones simply by leveraging the geometry of the screen. What this means for developers: Place your most important and frequently used actions where users can reach them with the least effort. Screen edges and corners act as natural stopping points, meaning users cannot overshoot them. This transforms even small buttons into large, easy‑to‑hit interaction zones. By anchoring navigation bars, primary actions, and essential menus along these boundaries, you reduce cognitive load, speed up interaction, and create interfaces that feel more intuitive. 
 
-
 From the image above, we can see that the call-to-actions buttons on each of the screens are the most visually dominant button and largest in size and also blacked within the natural region. This makes it faster/easier to interact with. 
-
 
 Place your Call-to-actions button  within the natural zone.
 
