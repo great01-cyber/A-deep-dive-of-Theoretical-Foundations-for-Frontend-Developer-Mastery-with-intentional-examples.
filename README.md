@@ -64,6 +64,8 @@ As a developer, avoid overwhelming users with too many buttons, menu items, or a
 
 Use of comparison table to compare products
 
+https://drive.google.com/file/d/1sY-tb9W1QDnyrH9dd3NSYsteP9WoMT27/view?usp=drive_link
+
 Progressive Disclosure.MOV
 
 From the video above, instead of showing all the menu details at once, it is better to hide them initially. As you can see, the additional information only appears when the arrow down button is pressed. This approach prevents overwhelming the user and keeps the interface clean and focused. Also, rather than showing advanced configuration options by default, display only the most commonly used settings. Advanced options can be hidden under an expandable section like “Advanced” or “More Settings.
@@ -105,6 +107,7 @@ Since we are talking about human perception, this will be a good time to introdu
 
 In practical application, the Isolation Effect is most frequently observed in the design of Calls-to-Action (CTAs). On a page filled with neutral-toned text and standard navigation links, a single button rendered in a vibrant, high-contrast color (like "Emergency Red" or "Primary Brand Blue") leverages the Von Restorff Effect. This visual "hitch" in the user's scan path ensures that the most important action—such as "Buy Now" or "Sign Up"—is the first thing they notice and the last thing they forget. A practical example of this seen below.
 
+https://drive.google.com/file/d/133aVUCo8U_t0WiZT62wz2Mr9D3gbm7yo/view?usp=drive_link
 Von Restorff Effect (The Isolation Effect).MOV
 
 Design Takeaway from Von Restorff Effect: So because users notice and remember distinctive elements more than uniform ones, make important buttons, alerts, or messages visually stand out (color, size, shape). Attention is limited, therefore isolate key information instead of blending it with clutter. Because important actions can be overlooked if not prominent, use contrasting colors, bold typography, or animations to guide users. Because visual salience improves recall, critical notifications or CTAs are placed where users are most likely to see them. However, please note as a frontend dev, you have to be careful with over-differentiation. If you have five different buttons all trying to be "unique" with different colors and animations, you create cognitive overload. The Von Restorff Effect only works when there is a clear, consistent pattern to break.
@@ -135,6 +138,7 @@ But what happens when a goal is not completed? Why do we sometimes feel uncomfor
 
 So because people remember unfinished tasks better than completed ones (Zeigarnik Effect), developers use progress indicators to make users aware that something is incomplete and motivate them to finish it. Break long forms into multi-step processes to encourage completion. display profile completion percentages (e.g., 70% complete) to push users toward 100%. This is the single reason why e-commerce platforms send abandoned cart reminders to bring users back to complete their purchase, apps use streak systems to encourage daily engagement and habit formation. Learning platforms show course completion bars to motivate users to finish modules. Developer use checkmarks, animations, or confirmations when steps are completed. 
 
+https://drive.google.com/file/d/1HxQ-EpYok-lEei2BfjR84qPiW89ziBmf/view?usp=drive_link
 @Goal Gradient.MOV
 
 **Tesla’s Law**: This law was proposed by Lawrence Tesla. He was a computer scientist known for his work on human-computer interaction, and he contributed significantly to making software more user-friendly, including work on cut, copy, and paste functionality. This law is otherwise known as the Law of conservation of complexity. The core Idea here is  every process has a certain amount of “inherent complexity" that cannot be removed. You can only decide who handles it: the user or the system. Examples of these inherent complexity can be translating user actions into correct operations behind the scenes, handling unreliable or slow network connections. Connecting with third-party APIs, services, or legacy systems, sorting large datasets quickly or performing complex search operations managing version changes and compatibility issues, managing state, interactions, and animations without confusing the user. All of these can be inherently complex, however it is the job of the developer to deal with the complexity.
@@ -143,6 +147,7 @@ As a developer, always try as much as possible to push complexity to the system.
 
 In Dart, a package like fuzzysearch can be used to implement this kind of intelligent matching. The advantage of this approach is greater than it first appears. It improves data consistency because users often enter the same information in different ways. For example, some users might type “Uni of Sheff,” others “Sheffield University,” and others “Uni of Sheffield,” while all are referring to “University of Sheffield.” This is how messy data is created, and it creates more work for data analysts. Little wonder that data analysts spend up to 70% of their time cleaning data. If developers invest more time in structuring how data is collected to ensure consistency, there would be far less work downstream for analysts. This same logic should be applied in how we collect date, time, and other information. I will strongly advise that apart from people's names and email addresses, developers try to standardize data collected. Use data & Time Pickers, Stepper controls, Input masks, checkboxes, dropdown menu & radio button, toggle switches. etc. The essence of removing complexity from the user is not only to improve usability, but also to ensure that the data collected is standardised, structured, and consistent.
 
+https://drive.google.com/file/d/1Tb8UrVxaLVpPQgJY_BN17w1KHe8wBhLT/view?usp=drive_link
 @Tesla.webm
 
 You see as the user tries to search for ‘sheffield’, related text is shown, and the user can select.
@@ -161,6 +166,7 @@ The researchers realised something profound: people don’t remember experiences
 
 Since people largely judge an experience by how it ends, developers focus on designing satisfying confirmation screens and smooth exit interactions. Concentrate less on making every single moment perfect and instead prioritise optimising the peak and final moments. A negative ending can overshadow an otherwise good experience, so carefully avoid frustrating final steps such as unexpected fees or confusing confirmations. Emotional intensity strongly shapes memory, which is why many apps incorporate celebration animations, rewards, or success messages at key moments to leave a lasting positive impression.
 
+https://drive.google.com/file/d/1IKACDppEmYpx-5Y-Ito63N0l39e5Py7K/view?usp=sharing
 @PeakEndRule.MOV
 
 **Postel’s Law (The Robustness Principle)**: Proposed by Jon Postel in the 1980s for networking protocols. Principle: “Be conservative in what you send, be liberal in what you accept.” Be strict/clear about the data or actions you output (guidelines, instructions, feedback. Be forgiving of user input errors (allow mistakes, autocorrect, flexible formats). This can also translate to ‘Precision in system communication and Flexibility in human interaction’. Many legacy systems fail because they require a user to type in a very specific format (e.g., MM/DD/YYYY). If the user types 2024-05-01, the system crashes or throws a frustrating error.
@@ -198,7 +204,8 @@ Sometimes a system cannot actually process a request in 400ms. In these cases, d
 
 **Debouncing**: In search bars, start showing results after a few keystrokes so the user feels the app is "predicting" their needs.
 
-Skeleton screen.MOV
+
+https://drive.google.com/file/d/11Icxd_KJy6xXSO2Ri-SVWeu7alSx6RK7/view?usp=drive_linkSkeleton screen.MOV
 
 An example of skeleton screens
 
