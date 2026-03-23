@@ -5,36 +5,46 @@ A deep dive of Theoretical Foundations for Frontend Developer Mastery with inten
 ![Knight Capital Incident](images/unnamed (2).jpg "Knight Capital")
 
 Have you ever abandoned an app at the sign-up page? Or felt uneasy navigating a website because the buttons were poorly arranged, the colors clashed, and the layout felt confusing and overly complex? Maybe you were asked to complete 20 fields at once. You carefully fill everything in, click submit — and only then are you told your password doesn’t meet certain hidden requirements. Requirements that were never clearly stated from the beginning. Instead of helpful guidance, you’re met with a vague message: “Invalid input.” Invalid how, you asked?
+
 Required fields weren’t marked clearly. There was no real-time validation. No red outline showing which field was incorrect. Just a prompt telling you to “go back and correct missing information.”
+
 So you scroll. You search. You guess.
- And you are now already getting frustrated. 
+And you are now already getting frustrated. 
 The reason is no one enjoys repeating a task they thought they had already completed — especially when the mistakes could have been prevented with clear guidance along the way.
 Also, you manage to fill in the form and you tap the Submit button.
 Nothing happens.
 No loading spinner.
- No subtle animation.
- No confirmation message.
- No success screen.
+No subtle animation.
+No confirmation message.
+No success screen.
 Just silence.
 For a brief moment, you’re left wondering: Did it go through?
 So you tap again. And maybe… one more time.
 At this point, you become fed up and either postpone the signup process to when you have the time, and as usual, most may not return unless it’s really important to them.
 This is how poor user experience quietly creates bigger problems.
+
 These frustrations often arise because frontend developers either overlook or are unaware of the essential design principles and learning theories that underpin a smooth, intuitive user experience. As a frontend developer, your interface should minimise cognitive load, provide immediate clarity, and guide users effortlessly through every task.
+
 In this tutorial, I will introduce the academic theories that should inform and elevate your frontend decisions. You might wonder: What do academic theories have to do with frontend development? The answer is simple. Academic theories are not abstract ideas; they are the result of rigorous scientific investigation — controlled experiments, validated models, and decades of research into how humans think, learn, perceive, and interact with information.
+
 Because these theories are grounded in evidence rather than opinion, they offer reliable guidance for building interfaces that align with how the human brain actually processes information. Applying them to frontend development means you are not designing by guesswork or personal preference; you are applying tested, scientific insights to create clearer, faster, more humane user experiences.
+
 In other words, when you build with academic theory in mind, your frontend becomes more than just visually appealing — it becomes cognitively efficient, behaviourally aligned, and measurably easier for users to navigate.
+
 Based on the above I propose the following laws will guide your development. Let’s start by looking at Fitt’s law.
+
 Fitts’s Law: Fitt’s law is a brainchild of Paul Fitts. He was among the early psychologists who recognised that many human errors result from flawed design rather than simple human weakness. During World War II, he studied airplane cockpit layouts and concluded that numerous incidents attributed to pilot error were actually caused by poor design decisions. Based on his findings, he postulated that the time required to acquire/reach a target is determined by the distance to the target and the size of the target. See diagram illustration below.
 
 
 From the above, between Target B and Target C, it will be faster to interact with Target C than Target B simply because of the distance (Target B is farther away). Interestingly, though Target A and Target C are at the same distance, Target C will still be faster to interact with and less error-prone because of its larger size. In simple terms, Fitt’s Law tells us that the time required to move to a target depends on two main factors: the distance to the target and the size of the target. The farther away an element is, the longer it takes to reach. The smaller it is, the more precision it demands thereby increasing interaction time and the likelihood of errors. Conversely, closer and larger targets reduce cognitive load, motor effort, and frustration. In a nutshell, Fitts’s main message to developers is to reduce the distance users must travel on the screen and to make important buttons large and visually dominant. Imagine placing a submit button at the top-right corner of the screen. After a user finishes filling out a long form, they must then move their cursor or thumb all the way back to the top-right corner just to submit the form. Ideally, the best place to position the submit button is at the bottom, where the form ends. Another example of this is - placing the related buttons like “Add to Cart” button and “Check out Button” in opposite directions. This will cause extra thumb movement across the screen, thereby increasing interaction.
+
 Design Takeaway from Fitt’s Law: As a frontend developer, you should always ensure your targets (by target I mean primary buttons/(Call-to-action buttons) such as "Subscribe Now," "Pay Now," "Create Account," or "Sign Up") are large and visually dominant. I strongly recommend making the Call-to-Action (CTA) the most recognisable button on the screen; this is backed by UI theory. Additionally, place your CTA buttons in a natural position that feels convenient for the user. Specifically, place your targets close to the thumb. It is much faster for a user to interact within the "natural zone" than the "hard zone" (see figure). Also use padding to increase the interactive area. By doing this, you are increasing the size of the targets. Now imagine a menu that disappears because your cursor moves a few inches away from the menu, simply because the developer  failed to use effective padding to increase the interactive area that will be really frustrating to the user. 
+
 A fundamental principle that also emerges from Fitt’s Law is the idea of infinite targets. This concept also emerges from Fitts’s Law.When an interface element is placed at the very edge or corner of a screen, it becomes effectively “infinite” because the cursor cannot move beyond the screen boundary. The edge acts as a physical barrier, allowing the user to fling the mouse in that direction without precision or careful aiming. As a result, corners and edges become the fastest, easiest, and most reliable places for users to access important controls.
+
 This is why operating systems such as Apple’s macOS and Microsoft Windows position their most essential menus and buttons at these locations. The macOS Apple Menu sits in the top‑left corner, Windows historically placed the Start button in the bottom‑left corner, and both systems anchor taskbars, docks, and notification areas along screen edges. These placements reduce cognitive load, minimise motor effort, and increase interaction speed because users do not need to slow down or correct their cursor movement. The screen itself “catches” the pointer.
+
 In essence, infinite targets transform small interface elements into large, easy‑to‑hit zones simply by leveraging the geometry of the screen. What this means for developers: Place your most important and frequently used actions where users can reach them with the least effort. Screen edges and corners act as natural stopping points, meaning users cannot overshoot them. This transforms even small buttons into large, easy‑to‑hit interaction zones. By anchoring navigation bars, primary actions, and essential menus along these boundaries, you reduce cognitive load, speed up interaction, and create interfaces that feel more intuitive. 
-
-
 
 
 
