@@ -2,13 +2,17 @@
 
 ![Knight Capital Incident](images/developerImage.jpg "Knight Capital")
 
-Have you ever abandoned an app at the sign-up page? Or felt uneasy navigating a website because the buttons were poorly arranged, the colors clashed, and the layout felt confusing and overly complex? Maybe you were asked to complete 20 fields at once. You carefully fill everything in, click submit — and only then are you told your password doesn’t meet certain hidden requirements. Requirements that were never clearly stated from the beginning. Instead of helpful guidance, you’re met with a vague message: “Invalid input.” Invalid how, you asked?
 
-Required fields weren’t marked clearly. There was no real-time validation. No red outline showing which field was incorrect. Just a prompt telling you to “go back and correct missing information.”
+Have you ever abandoned an app right at the sign‑up page? Or felt uneasy navigating a website because the buttons were scattered randomly, the colors clashed, and the layout felt confusing and unnecessarily complex? Maybe you were asked to complete twenty fields in one go. You carefully fill everything out, hit Submit — and only then are you told your password doesn’t meet some hidden, unspoken requirement. A requirement that was never communicated upfront.
+
+Instead of clear guidance, you’re met with a vague, almost mocking message: “Invalid input.”  
+Invalid how, you wonder.
+
+Required fields weren’t marked. There was no real‑time validation. No helpful red outline showing which field was wrong. Just a generic prompt telling you to “go back and correct missing information,” as if you’re supposed to magically know what the system wants.
 
 So you scroll. You search. You guess.
 And you are now already getting frustrated. 
-The reason is no one enjoys repeating a task they thought they had already completed — especially when the mistakes could have been prevented with clear guidance along the way.
+The reason you are frustrated is simple, no one enjoys repeating a task they thought they had already completed — especially when the mistakes could have been prevented with clear guidance along the way.
 Also, you manage to fill in the form and you tap the Submit button.
 Nothing happens.
 No loading spinner.
