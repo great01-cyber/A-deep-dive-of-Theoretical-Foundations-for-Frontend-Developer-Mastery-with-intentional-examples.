@@ -1,4 +1,4 @@
-# A deep dive of Theoretical Foundations for Frontend Developer Mastery with intentional examples.
+# How academic theories influence human-centered design in front-end development.
 
 ![Knight Capital Incident](images/developerImage.jpg "Knight Capital")
 
