@@ -5,7 +5,7 @@
 
 Have you ever abandoned an app right at the sign‑up page? Or felt uneasy navigating a website because the buttons were scattered randomly, the colors clashed, and the layout felt confusing and unnecessarily complex? Maybe you were asked to complete twenty fields in one go. You carefully fill everything out, hit Submit — and only then are you told your password doesn’t meet some hidden, unspoken requirement. A requirement that was never communicated upfront.
 
-Requirements that were never clearly stated from the beginning. Instead of helpful guidance, you’re met with a vague message: “Invalid input.
+Instead of helpful guidance, you’re met with a vague message: “Invalid input.
 Invalid how, you wonder.
 
 Required fields weren’t marked. There was no real‑time validation. No helpful red outline showing which field was wrong. Just a generic prompt telling you to “go back and correct missing information,” as if you’re supposed to magically know what the system wants.
