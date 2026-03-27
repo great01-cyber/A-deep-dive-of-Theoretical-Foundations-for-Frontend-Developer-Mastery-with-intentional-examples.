@@ -5,7 +5,7 @@
 
 Have you ever abandoned an app right at the sign‑up page? Or felt uneasy navigating a website because the buttons were scattered randomly, the colors clashed, and the layout felt confusing and unnecessarily complex? Maybe you were asked to complete twenty fields in one go. You carefully fill everything out, hit Submit — and only then are you told your password doesn’t meet some hidden, unspoken requirement. A requirement that was never communicated upfront.
 
-Instead of clear guidance, you’re met with a vague, almost mocking message: “Invalid input.”  
+Requirements that were never clearly stated from the beginning. Instead of helpful guidance, you’re met with a vague message: “Invalid input.
 Invalid how, you wonder.
 
 Required fields weren’t marked. There was no real‑time validation. No helpful red outline showing which field was wrong. Just a generic prompt telling you to “go back and correct missing information,” as if you’re supposed to magically know what the system wants.
@@ -27,15 +27,16 @@ Even if you haven’t experienced this exact scenario, you’ve almost certainly
 
 These frustrations often arise because frontend developers either overlook or are unaware of the essential design principles and theories that underpin a smooth, intuitive user experience. As a frontend developer, your interface should minimise cognitive load, provide immediate clarity, and guide users effortlessly through every task.
 
-In this tutorial, I will introduce the academic theories that should inform and elevate your frontend decisions. You might wonder: What do academic theories have to do with frontend development? The answer is simple. Academic theories are not abstract ideas; they are the result of rigorous scientific investigation — controlled experiments, validated models, and decades of research into how humans think, learn, perceive, and interact with information.
+In this article, I will introduce the academic theories that should inform and elevate your frontend decisions. You might wonder: What do academic theories have to do with frontend development? The answer is simple. Academic theories are not abstract ideas; they are the result of rigorous scientific investigation — controlled experiments, validated models, and decades of research into how humans think, learn, perceive, and interact with information.
 
 Because these theories are grounded in evidence rather than opinion, they offer reliable guidance for building interfaces that align with how the human brain actually processes information. Applying them to frontend development means you are not designing by guesswork or personal preference; you are applying tested, scientific insights to create clearer, faster, more humane user experiences.
 
 In other words, when you build with academic theory in mind, your frontend becomes more than just visually appealing — it becomes cognitively efficient, behaviourally aligned, and measurably easier for users to navigate.
 
-Based on the sentiment above,       the following laws will guide your development. Let’s start by looking at Fitt’s law.
+Based on the sentiment above, the following laws will guide your development. Let’s start by looking at Fitt’s law.
 
 **Fitts’s Law:** 
+
 Fitt’s law is a brainchild of Paul Fitts. He was among the early psychologists who recognised that many human errors result from flawed design rather than simple human weakness. During World War II, he studied airplane cockpit layouts and concluded that numerous incidents attributed to pilot error were actually caused by poor design decisions. Based on his findings, he postulated that the time required to acquire/reach a target is determined by the distance to the target and the size of the target. See diagram illustration below.
 
 
@@ -45,25 +46,36 @@ Fitt’s law is a brainchild of Paul Fitts. He was among the early psychologists
 
 
 
-From the above, between Target B and Target C, it will be faster to interact with Target C than Target B simply because of the distance (Target B is farther away). Interestingly, though Target A and Target C are at the same distance, Target C will still be faster to interact with and less error-prone because of its larger size. In simple terms, Fitt’s Law tells us that the time required to move to a target depends on two main factors: the distance to the target and the size of the target. The farther away an element is, the longer it takes to reach. The smaller it is, the more precision it demands thereby increasing interaction time and the likelihood of errors. Conversely, closer and larger targets reduce cognitive load, motor effort, and frustration.
+From the above, between Target B and Target C, it will be faster to interact with Target C than Target B simply because of the distance (Target B is farther away). Interestingly, though Target A and Target C are at the same distance, Target C will still be faster to interact with and less error-prone because of its larger size. 
+
+In simple terms, Fitt’s Law tells us that the time required to move to a target depends on two main factors: the distance to the target and the size of the target. The farther away an element is, the longer it takes to reach. The smaller it is, the more precision it demands thereby increasing interaction time and the likelihood of errors. Conversely, closer and larger targets reduce cognitive load, motor effort, and frustration.
 
 In a nutshell, Fitts’s main message to developers is to reduce the distance users must travel on the screen and to make important buttons large and visually dominant. Imagine placing a submit button at the top-right corner of the screen. After a user finishes filling out a long form, they must then move their cursor or thumb all the way back to the top-right corner just to submit the form. Ideally, the best place to position the submit button is at the bottom, where the form ends. Another example of this is - placing the related buttons like “Add to Cart” button and “Check out Button” in opposite directions. This will cause extra thumb movement across the screen, thereby increasing interaction.
 
-Design Takeaway from Fitt’s Law: As a frontend developer, you should always ensure your targets (by target I mean primary buttons/(Call-to-action buttons) such as "Subscribe Now," "Pay Now," "Create Account," or "Sign Up") are large and visually dominant. I strongly recommend making the Call-to-Action (CTA) the most recognisable button on the screen; this is backed by UI theory. Additionally, place your CTA buttons in a natural position that feels convenient for the user. Specifically, place your targets close to the thumb. It is much faster for a user to interact within the "natural zone" than the "hard zone" (see figure). Also use padding to increase the interactive area. By doing this, you are increasing the size of the targets. Now imagine a menu that disappears because your cursor moves a few inches away from the menu, simply because the developer  failed to use effective padding to increase the interactive area that will be really frustrating to the user. 
+Design Takeaway from Fitt’s Law: As a frontend developer, you should always ensure your targets (by target I mean primary buttons/(Call-to-action buttons) such as "Subscribe Now," "Pay Now," "Create Account," or "Sign Up") are large and visually dominant. I strongly recommend making the Call-to-Action (CTA) the most recognisable button on the screen. Additionally, place your CTA buttons in a natural position that feels convenient for the user. Specifically, place your targets close to the thumb. It is much faster for a user to interact within the "natural zone" than the "hard zone" (see figure). Also use padding to increase the interactive area. By doing this, you are increasing the size of the targets.
 
-A fundamental principle that also emerges from Fitt’s Law is the idea of infinite targets. This concept also emerges from Fitts’s Law.When an interface element is placed at the very edge or corner of a screen, it becomes effectively “infinite” because the cursor cannot move beyond the screen boundary. The edge acts as a physical barrier, allowing the user to fling the mouse in that direction without precision or careful aiming. As a result, corners and edges become the fastest, easiest, and most reliable places for users to access important controls.
+Now imagine a menu that disappears the moment your cursor drifts a few inches away. You’re not trying to close it — you simply moved slightly, and suddenly the entire menu collapses. That tiny slip forces you to start the interaction all over again. It’s a small mistake, but it creates a disproportionately frustrating experience.
+This happens because the interactive area is too narrow. 
+That’s why effective padding — or more broadly, generous interactive zones — is essential. By increasing the clickable or hoverable area around a menu, you are increasing the size of the targets, which makes the interaction more stable, more forgiving, and far less cognitively demanding. Users can move naturally without fear of accidentally “falling off” the target.
+
+When a menu collapses too easily, the interface is essentially saying:
+“You must be perfect.”  
+Good UX says the opposite:
+“You can be human.”
+
+Another fundamental principle that also emerges from Fitt’s Law is the idea of infinite targets. When an interface element is placed at the very edge or corner of a screen, it becomes effectively “infinite” because the cursor cannot move beyond the screen boundary. The edge acts as a physical barrier, allowing the user to fling the mouse in that direction without precision or careful aiming. As a result, corners and edges become the fastest, easiest, and most reliable places for users to access important controls.
 
 This is why operating systems such as Apple’s macOS and Microsoft Windows position their most essential menus and buttons at these locations. The macOS Apple Menu sits in the top‑left corner, Windows historically placed the Start button in the bottom‑left corner, and both systems anchor taskbars, docks, and notification areas along screen edges. These placements reduce cognitive load, minimise motor effort, and increase interaction speed because users do not need to slow down or correct their cursor movement. The screen itself “catches” the pointer.
 
-In essence, infinite targets transform small interface elements into large, easy‑to‑hit zones simply by leveraging the geometry of the screen. What this means for developers: Place your most important and frequently used actions where users can reach them with the least effort. Screen edges and corners act as natural stopping points, meaning users cannot overshoot them. This transforms even small buttons into large, easy‑to‑hit interaction zones. By anchoring navigation bars, primary actions, and essential menus along these boundaries, you reduce cognitive load, speed up interaction, and create interfaces that feel more intuitive. 
+In essence, infinite targets transform small interface elements into large, easy‑to‑hit zones simply by leveraging the geometry of the screen. What this means for developers: Place your most important and frequently used actions where users can reach them with the least effort. Screen edges and corners act as natural stopping points, meaning users cannot overshoot them. 
 
 ![Knight Capital Incident](images/3.png "Knight Capital")
 
-From the image above, we can see that the call-to-actions buttons on each of the screens are the most visually dominant button and largest in size and also blacked within the natural region. This makes it faster/easier to interact with. 
+From the image above, we can see that the call-to-actions buttons on each of the screens are the most visually dominant button and largest in size and also placed within the natural region. This makes it faster/easier to interact with. 
 
 ![Knight Capital Incident](images/4.png "Knight Capital")
 
-Place your Call-to-actions button  within the natural zone.
+Place your Call-to-actions button within the natural zone.
 
 **Hicks Law**: 
 Hick’s Law is a psychological principle that describes the relationship between the number of choices presented to a user and the time it takes them to make a decision. It was formulated by William Edmund Hick in 1952. The law states that as the number of options increases, the decision time increases logarithmically. In simple terms, more choices slow users down, while fewer choices speed up decision-making. 
