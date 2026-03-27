@@ -10,30 +10,53 @@ Invalid how, you wonder.
 
 Required fields weren’t marked. There was no real‑time validation. No helpful red outline showing which field was wrong. Just a generic prompt telling you to “go back and correct missing information,” as if you’re supposed to magically know what the system wants.
 
-So you scroll. You search. You guess.
+So you scroll.
+
+You search.
+
+You guess.
+
 And you are now already getting frustrated. 
+
 The reason you are frustrated is simple, no one enjoys repeating a task they thought they had already completed — especially when the mistakes could have been prevented with clear guidance along the way.
-Also, you manage to fill in the form and you tap the Submit button.
+
+You manage to fill in the form and you tap the Submit button.
+
 Nothing happens.
+
 No loading spinner.
+
 No subtle animation.
+
 No confirmation message.
+
 No success screen.
+
 Just silence.
 For a brief moment, you’re left wondering: Did it go through?
 So you tap again. And maybe… one more time.
+
 At this point, you become fed up and either postpone the signup process to when you have the time, and as usual, most may not return unless it’s really important to them.
+
 Even if you haven’t experienced this exact scenario, you’ve almost certainly felt the same kind of friction — that moment when a digital interface makes you pause, hesitate, or wonder what you’re supposed to do next.
 
-These frustrations often arise because frontend developers either overlook or are unaware of the essential design principles and theories that underpin a smooth, intuitive user experience. As a frontend developer, your interface should minimise cognitive load, provide immediate clarity, and guide users effortlessly through every task.
+These frustrations often arise because frontend developers either overlook or are unaware of the essential design principles and theories that underpin a smooth, intuitive user experience. 
 
-In this article, I will introduce the academic theories that should inform and elevate your frontend decisions. You might wonder: What do academic theories have to do with frontend development? The answer is simple. Academic theories are not abstract ideas; they are the result of rigorous scientific investigation — controlled experiments, validated models, and decades of research into how humans think, learn, perceive, and interact with information.
+As a frontend developer, your interface should minimise cognitive load, provide immediate clarity, and guide users effortlessly through every task.
 
-Because these theories are grounded in evidence rather than opinion, they offer reliable guidance for building interfaces that align with how the human brain actually processes information. Applying them to frontend development means you are not designing by guesswork or personal preference; you are applying tested, scientific insights to create clearer, faster, more humane user experiences.
+In this article, I will introduce the academic theories that should inform and elevate your frontend decisions. You might wonder: 
+
+What do academic theories have to do with frontend development? 
+
+The answer is simple. Academic theories are not abstract ideas; they are the result of rigorous scientific investigation — controlled experiments, validated models, and decades of research into how humans think, learn, perceive, and interact with information.
+
+Because these theories are grounded in evidence rather than opinion, they offer reliable guidance for building interfaces that align with how the human brain actually processes information. 
+
+Applying them to frontend development means you are not designing by guesswork or personal preference; you are applying tested, scientific insights to create clearer, faster, more humane user experiences.
 
 In other words, when you build with academic theory in mind, your frontend becomes more than just visually appealing — it becomes cognitively efficient, behaviourally aligned, and measurably easier for users to navigate.
 
-Based on the sentiment above, the following laws will guide your development. Let’s start by looking at Fitt’s law.
+Based on the sentiment above, the following laws and principles will guide your development. Let’s start by looking at Fitt’s law.
 
 **Fitts’s Law:** 
 
@@ -48,26 +71,44 @@ Fitt’s law is a brainchild of Paul Fitts. He was among the early psychologists
 
 From the above, between Target B and Target C, it will be faster to interact with Target C than Target B simply because of the distance (Target B is farther away). Interestingly, though Target A and Target C are at the same distance, Target C will still be faster to interact with and less error-prone because of its larger size. 
 
-In simple terms, Fitt’s Law tells us that the time required to move to a target depends on two main factors: the distance to the target and the size of the target. The farther away an element is, the longer it takes to reach. The smaller it is, the more precision it demands thereby increasing interaction time and the likelihood of errors. Conversely, closer and larger targets reduce cognitive load, motor effort, and frustration.
+In simple terms, Fitt’s Law tells us that the time required to move to a target depends on two main factors: the distance to the target and the size of the target. The farther away an element is, the longer it takes to reach. The smaller it is, the more precision it demands thereby increasing interaction time and the likelihood of errors. 
 
-In a nutshell, Fitts’s main message to developers is to reduce the distance users must travel on the screen and to make important buttons large and visually dominant. Imagine placing a submit button at the top-right corner of the screen. After a user finishes filling out a long form, they must then move their cursor or thumb all the way back to the top-right corner just to submit the form. Ideally, the best place to position the submit button is at the bottom, where the form ends. Another example of this is - placing the related buttons like “Add to Cart” button and “Check out Button” in opposite directions. This will cause extra thumb movement across the screen, thereby increasing interaction.
+Conversely, closer and larger targets reduce cognitive load, motor effort, and frustration.
 
-Design Takeaway from Fitt’s Law: As a frontend developer, you should always ensure your targets (by target I mean primary buttons/(Call-to-action buttons) such as "Subscribe Now," "Pay Now," "Create Account," or "Sign Up") are large and visually dominant. I strongly recommend making the Call-to-Action (CTA) the most recognisable button on the screen. Additionally, place your CTA buttons in a natural position that feels convenient for the user. Specifically, place your targets close to the thumb. It is much faster for a user to interact within the "natural zone" than the "hard zone" (see figure). Also use padding to increase the interactive area. By doing this, you are increasing the size of the targets.
+In a nutshell, Fitts’s main message to developers is to reduce the distance users must travel on the screen and to make important buttons large and visually dominant. Imagine placing a submit button at the top-right corner of the screen. After a user finishes filling out a long form, they must then move their cursor or thumb all the way back to the top-right corner just to submit the form. 
 
-Now imagine a menu that disappears the moment your cursor drifts a few inches away. You’re not trying to close it — you simply moved slightly, and suddenly the entire menu collapses. That tiny slip forces you to start the interaction all over again. It’s a small mistake, but it creates a disproportionately frustrating experience.
+Ideally, the best place to position the submit button is at the bottom, where the form ends. Another example of this is - placing the related buttons like “Add to Cart” button and “Check out Button” in opposite directions. This will cause extra thumb movement across the screen, thereby increasing interaction time.
+
+Design Takeaway from Fitt’s Law: As a frontend developer, you should always ensure your targets (by target I mean primary buttons/(Call-to-action buttons) such as "Subscribe Now," "Pay Now," "Create Account," or "Sign Up") are large and visually dominant. I strongly recommend making the Call-to-Action (CTA) the most recognisable button on the screen. 
+
+Additionally, place your CTA buttons in a natural position that feels convenient for the user. Specifically, place your targets close to the thumb. It is much faster for a user to interact within the "natural zone" than the "hard zone" (see figure). Also use padding to increase the interactive area. By doing this, you are increasing the size of the targets.
+
+Now imagine a menu that disappears the moment your cursor drifts a few inches away. You’re weren't trying to close it — you simply moved slightly, and suddenly the entire menu collapses. That tiny slip forces you to start the interaction all over again. It’s a small mistake, but it creates a disproportionately frustrating experience.
+
 This happens because the interactive area is too narrow. 
-That’s why effective padding — or more broadly, generous interactive zones — is essential. By increasing the clickable or hoverable area around a menu, you are increasing the size of the targets, which makes the interaction more stable, more forgiving, and far less cognitively demanding. Users can move naturally without fear of accidentally “falling off” the target.
+
+That’s why effective padding — or more broadly, generous interactive zones — is essential. By increasing the clickable or hoverable area around a menu, you are increasing the size of the targets, which makes the interaction more stable, more forgiving, and far less cognitively demanding. 
+
+Which ensures users can move naturally without fear of accidentally “falling off” the target.
 
 When a menu collapses too easily, the interface is essentially saying:
 “You must be perfect.”  
 Good UX says the opposite:
 “You can be human.”
 
-Another fundamental principle that also emerges from Fitt’s Law is the idea of infinite targets. When an interface element is placed at the very edge or corner of a screen, it becomes effectively “infinite” because the cursor cannot move beyond the screen boundary. The edge acts as a physical barrier, allowing the user to fling the mouse in that direction without precision or careful aiming. As a result, corners and edges become the fastest, easiest, and most reliable places for users to access important controls.
+This statement is synonymous with Postel’s Law: “Be conservative in what you send, and liberal in what you accept.” We will delve deeper into this in a later part of the article.
 
-This is why operating systems such as Apple’s macOS and Microsoft Windows position their most essential menus and buttons at these locations. The macOS Apple Menu sits in the top‑left corner, Windows historically placed the Start button in the bottom‑left corner, and both systems anchor taskbars, docks, and notification areas along screen edges. These placements reduce cognitive load, minimise motor effort, and increase interaction speed because users do not need to slow down or correct their cursor movement. The screen itself “catches” the pointer.
+Another fundamental principle that also emerges from Fitt’s Law is the idea of infinite targets. When an interface element is placed at the very edge or corner of a screen, it becomes effectively “infinite” because the cursor cannot move beyond the screen boundary. The edge acts as a physical barrier, allowing the user to fling the mouse in that direction without precision or careful aiming. 
 
-In essence, infinite targets transform small interface elements into large, easy‑to‑hit zones simply by leveraging the geometry of the screen. What this means for developers: Place your most important and frequently used actions where users can reach them with the least effort. Screen edges and corners act as natural stopping points, meaning users cannot overshoot them. 
+As a result, corners and edges become the fastest, easiest, and most reliable places for users to access important controls.
+
+This is why operating systems such as Apple’s macOS and Microsoft Windows position their most essential menus and buttons at these locations. The macOS Apple Menu sits in the top‑left corner, Windows historically placed the Start button in the bottom‑left corner, and both systems anchor taskbars, docks, and notification areas along screen edges. 
+
+These placements reduce cognitive load, minimise motor effort, and increase interaction speed because users do not need to slow down or correct their cursor movement. The screen itself “catches” the pointer.
+
+In essence, infinite targets transform small interface elements into large, easy‑to‑hit zones simply by leveraging the geometry of the screen. 
+
+What this means for developers: Place your most important and frequently used actions where users can reach them with the least effort. Screen edges and corners act as natural stopping points, meaning users cannot overshoot them. 
 
 ![Knight Capital Incident](images/3.png "Knight Capital")
 
@@ -83,9 +124,17 @@ Hick’s Law is a psychological principle that describes the relationship betwee
 
 ![Knight Capital Incident](images/5.png "Knight Capital")
 
-Literally, this is how users feel when they encounter a form that asks for too much information upfront. The longer the form gets, the more frustrated they become. An example of this is overloading menus with too many items, Presenting long, unorganised forms, too many call-to-actions (CTAs) on one screen and nested menus with excessive depth etc. All of these creates friction and can lead to cognitive overload.
+Literally, this is how users feel when they encounter a form that asks for too much information upfront. The longer the form gets, the more frustrated they become. An example of this is overloading menus with too many items, Presenting long, unorganised forms, too many call-to-actions (CTAs) on one screen and nested menus with excessive depth etc. 
 
-As a developer, avoid overwhelming users with too many buttons, menu items, or actions at once. Avoid cluttered navigation menus. In fact, it’s been said that SEO engines find it harder to track too many menus. Hide advanced options under “More” or use progressive disclosure. Use progressive disclosure to break multi-step forms and complex decisions into smaller steps. Organise options into logical categories so users can process information faster (An example of this is, placing “delete” and “edit” options together, as they often go together). Reduce decision anxiety, as too many choices create doubt and friction (It’s been said that the more you ask from a user, the less you get). I also advise using recommended labels, showing brief descriptions, providing visual previews, and using comparison tables wisely to show comparison between products especially when they have many characteristics. An example of a comparison table is shown below:
+All of these creates friction and can lead to cognitive overload.
+
+As a developer, avoid overwhelming users with too many buttons, menu items, or actions at once. Avoid cluttered navigation menus. In fact, it’s been said that SEO engines find it harder to track too many menus. Hide advanced options under “More” or use progressive disclosure.
+
+Use progressive disclosure to break multi-step forms and complex decisions into smaller steps. Organise options into logical categories so users can process information faster (An example of this is, placing “delete” and “edit” options together, as they often go together). 
+
+Reduce decision anxiety, as too many choices create doubt and friction (It’s been said that the more you ask from a user, the less you get).
+
+I also advise using recommended labels, showing brief descriptions, providing visual previews, and using comparison tables wisely to show comparison between products especially when they have many characteristics. An example of a comparison table is shown below:
 
 ![Knight Capital Incident](images/6.jpg "Knight Capital")
 
@@ -97,10 +146,17 @@ Progressive Disclosure.MOV
 
 From the video above, instead of showing all the menu details at once, it is better to hide them initially. As you can see, the additional information only appears when the arrow down button is pressed. This approach prevents overwhelming the user and keeps the interface clean and focused. 
 
-Also, rather than showing advanced configuration options by default, display only the most commonly used settings. Advanced options can be hidden under an expandable section like “Advanced” or “More Settings.
+Also, rather than showing advanced configuration options by default, display only the most commonly used settings. 
 
+Advanced options can be hidden under an expandable section like “Advanced” or “More Settings. 
 
-**Gestalt Principles**: In the 1920s, a group of German psychologists Max Wertheimer, Kurt Koffka, and Wolfgang Köhlern introduced what are now known as the Gestalt Principles. Their work sought to understand how humans perceive and interpret visual information. The word “Gestalt” is German for “unified whole,” reflecting the core idea behind the theory: people naturally perceive objects as organised patterns and complete forms rather than as separate, disconnected parts. These principles explain how the human mind structures visual elements to make sense of the world. Over time, they have become highly influential in fields such as design, user experience (UX), psychology, and data visualization, where understanding perception is critical.
+Which makes your interface less cluttered and more visually organized.
+
+And speaking of visual organization, this is the perfect moment to introduce Gestalt principles — the psychological rules that explain how users naturally group and interpret what they see.
+
+**Gestalt Principles**: In the 1920s, a group of German psychologists Max Wertheimer, Kurt Koffka, and Wolfgang Köhlern introduced what are now known as the Gestalt Principles. Their work sought to understand how humans perceive and interpret visual information. The word “Gestalt” is German for “unified whole,” reflecting the core idea behind the theory: people naturally perceive objects as organised patterns and complete forms rather than as separate, disconnected parts. 
+
+These principles explain how the human mind structures visual elements to make sense of the world. Over time, they have become highly influential in fields such as design, user experience (UX), psychology, and data visualization, where understanding perception is critical.
 
 Some of the key Gestalt principles include:
 
@@ -116,7 +172,7 @@ Example: In a blog feed, the "Title," "Author," and "Date" should have small mar
 
 **Example**: A Horizontal Carousel where the last visible card is slightly "cut off" at the edge of the screen. This visual break creates a path that encourages the user to keep scrolling; their eyes follow the line of cards.
 
-**Closure**: When we look at a complex arrangement of visual elements, we tend to look for a single, recognisable pattern. If an image is missing parts, our brains fill in the gaps to "close" the shape. This is a favorite technique for minimalist logo design.
+**Closure**: When we look at a complex arrangement of visual elements, we tend to look for a single, recognisable pattern. If an image is missing parts, our brains fill in the gaps to "close" the shape.
 
 **Example**: A "hamburger menu" (three lines) isn't a literal drawer, but our brains "close" the shape to understand it represents a menu. Similarly, a segmented circular loading spinner is just a few moving lines, but we perceive it as a continuous rotating circle.
 
@@ -136,7 +192,7 @@ Example: In a blog feed, the "Title," "Author," and "Date" should have small mar
 
 In all, Use spacing, alignment, consistency, contrast, and motion intentionally — because the human brain is always trying to group, follow, and prioritise what it sees. Your job is to guide that instinct, not fight it.
 
-Since we are talking about human perception, this will be a good time to introduce the Von Restorff Effect. While they both approach design from opposite angles, they are two sides of the same coin: Gestalt explains how we group things together, while Von Restorff explains how we notice when something doesn't belong to a group.
+To complete the picture of how users perceive interfaces, it helps to introduce the Von Restorff Effect — essentially the counterpart to Gestalt. Gestalt explains how we group elements; Von Restorff explains how we notice the one that doesn’t fit.
 
 **Von Restorff Effect (The Isolation Effect)**: This effect is saying, when a list contains many similar items, the one item that breaks the pattern becomes the most noticeable and the easiest to remember. This is a brainchild of Hedwig von Restorff posited 1933. In principle it states: An item that stands out is more likely to be remembered than other items.
 
